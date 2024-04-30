@@ -9,8 +9,17 @@ html {
     min-height: 100%;
 }
 
+body {
+    position: relative;
+    font-family: 'Josefin Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    color: whitesmoke;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: black;
+}
+
 header {
-    border-bottom: 10px solid black;
     display: flex;
     align-items: center;
 }
@@ -30,10 +39,45 @@ main {
     background-color: rgb(191, 196, 191);
 }
 
+/* Nav Menu */
+#nav_menu {
+    border-top: 3px solid black;
+	border-bottom: 3px solid #000000;
+	background-color: #89700d;
+}
+#nav_menu ul {
+	list-style-type: none;
+	display: flex;
+    text-align: center;
+    align-items: center;
+}
+#nav_menu li {
+	width: 20%;
+    align-items: center;
+}
+#nav_menu a {
+	text-align: center;
+    align-items: center;
+	display: block;
+	padding: .7em 0;
+	background-color: #89700d;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+#nav_menu a:hover {
+	color: rgb(0, 0, 0);
+    background-color: whitesmoke;
+}
+
 img {
     max-width: 500px;
     width: 100%;
     margin: 0 1em;
+}
+
+.jrue {
+    background-color: rgb(1, 111, 1);
 }
 
 .classimageleft {
@@ -41,6 +85,7 @@ img {
 }
 
 .lefth2 {
+    padding-top: 1em;
     padding-left: 7.5em;
 }
 
@@ -66,8 +111,63 @@ div:nth-of-type(even) {
 
 footer {
     background-color: rgb(1, 111, 1);
-    padding: 2em;
-    font-size: 80%;
-    font-variant: small-caps;
-    text-align: center;
+    padding: 1em 0;
+    font-size: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid rgb(0, 0, 0);
+    margin-top: 1em;
+}
+
+footer {
+    padding: 2em 0;
+    font-size: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px ridge silver;
+    margin-top: 2em;
+}
+
+#cornerBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 1em 2em;
+    background-color: rgba(45, 188, 64, 0.544);
+    border: none;
+    border-radius: 10px;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+}
+
+#cornerBtn:hover {
+    background-color: rgb(35, 218, 32);
+    border:  2px solid rgb(0, 0, 0);
+}
+
+@media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .column img {
+        max-width: 100%;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
 }

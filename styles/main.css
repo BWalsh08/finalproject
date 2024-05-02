@@ -24,6 +24,7 @@ header {
     align-items: center;
 }
 
+
 header h2 {
     font-size: 300%;
     text-shadow: 1px 1px 1px white;
@@ -37,6 +38,21 @@ header img {
 
 main {
     background-color: rgb(191, 196, 191);
+}
+
+main h1 {
+    font-size: 400%;
+    text-align: center;
+    padding: 1em 0 1em 0;
+    background-image: url(../images/dwhitememe.png);
+    background-position-y: center;
+    color: rgb(1, 111, 1);
+    text-shadow: 2px 2px 2px black;
+
+}
+
+h2 {
+    text-shadow: 1px 1px 1px white;
 }
 
 /* Nav Menu */
@@ -93,6 +109,17 @@ img {
     padding-left: 50em;
 }
 
+.homeh2 {
+    background-color: rgb(1, 111, 1);
+    padding-top: 1em;
+    padding-left: 7.5em;
+}
+
+.homelefth2 {
+    background-color: rgb(1, 111, 1);
+    padding-left: 50em;
+}
+
 p {
     margin: 1em;
     font-family: sans-serif;
@@ -126,7 +153,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 3px ridge silver;
+    border-top: 5px solid black;
     margin-top: 2em;
 }
 
